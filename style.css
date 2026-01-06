@@ -1,0 +1,640 @@
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            font-family: sans-serif;
+        }
+          
+        :root{
+            --main-color: #000;
+            --primary:#1a245f;
+            --ancent:#BFD2F8;
+            --secondary:#159EEC;
+            --mordern:#02DDCD;
+            --primary-border:#1a245f67;
+        }
+        header{
+            width: 100%;          
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            height: 10vh;
+            background:var(--primary);
+            position: fixed; top: 0;
+            z-index: 999;
+            padding: 10px 50px;
+        }
+   
+        .d-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a{
+            color:white;
+            font-weight:semibold;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        header ul{
+            gap: 30px;
+        }
+          .icons-l{
+            height: 50px;
+        }
+         .normal, .sq-btn{
+            width: 120px;
+            height: 30px;
+            border-radius: 20px;
+            border: none;
+            background:var(--mordern);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            cursor: pointer;
+        }
+        .sq-btn{
+            border-radius: 0;
+             width: auto;
+            height: auto;
+            padding: 10px;
+        }
+
+        
+        /* ===================== hero section ===================== */
+        .hero-sec{
+            width: 100%;
+            height: 100vh;
+            gap: 1%;
+            /* padding: 0 7%; */
+            margin-top: 5vh;
+            margin-bottom: 50px;
+        
+        }
+        .hero-details{
+            margin-left: 50px;
+            width:600px;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            /* border: solid blue 1px; */
+      
+        }
+        .hero-details h1{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            letter-spacing: 1.5px;
+            color: var(--primary);
+        }
+            .hero-details h2{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px; 
+            color: var(--primary);
+            text-decoration: underline;
+            letter-spacing: 1.5px;
+        }
+        .hero-details p{
+            font-size: 15px;
+            line-height: 1.4;
+            letter-spacing: 1.5px;
+            width: 80%;
+            font-weight: 600;
+            text-align: justify;
+        }
+        .hero-details h3{
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: var(--mordern);
+    
+        }
+        .hero-sec:hover button{
+            background-color: var(--primary);
+            color: var(--mordern);  
+        }
+        
+        .hero-img{
+            margin-top: 15vh;
+            height: 100%;
+            width:65%;
+            position: relative;
+            right: 0;
+            top: 0;
+            z-index: -20;
+            border-radius: 50% 0% 0% 50%;
+            overflow: hidden;
+        } 
+        .hero-img img{
+            width: 100%;
+            height: 100%;
+           
+            /* object-fit: contain; */
+        }
+         .title, h3 span{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 30px;
+            color: var(--mordern);
+     
+        }
+        .main-title , .title{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .main-title{
+            color: var(--primary); font-size: 30px;
+        }
+
+        /* =============== info section ================= */
+.info-section{
+    /* border: solid blue 1px; */
+    margin: 70px 0;
+}
+/* 
+.info-section .container {
+    margin: 0 auto;
+    padding: 0 20px;
+        border: solid blue 1px;
+} */
+
+/* Row Logic */
+.info-section .row {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+     /* border: solid blue 1px; */
+}
+
+/* Reverses the order for the staggered effect */
+/* .row.reverse {
+    flex-direction: row-reverse;
+} */
+
+.info-section .text-content{
+border-radius: 5%;
+width: 40%;
+height: 60vh;
+position: absolute;right: 5%;
+z-index: 3;
+padding:2%;
+
+} 
+.info-section .image-content {
+            height: 100%;
+            width:55%;
+            position: relative;
+            right: 0;
+            top: 0;
+            z-index: -20;
+            border-radius: 0% 50% 50% 0%;
+            overflow: hidden;
+}
+.info-section .image-content img{
+    height: 100%;
+    width: 100%;
+}
+
+.info-section h1 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    /* text-align: center; */
+}
+
+.info-section h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info-section p {
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+} 
+
+
+/* Button Style */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid black;
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 2s;
+}
+
+.text-content:hover .btn{
+    background-color: #f0f7ff;
+    color: var(--primary);
+}
+
+/* Image Styles */
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Slight rounding like the screenshot */
+    display: block;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .row, .row.reverse {
+        flex-direction: column-reverse; /* Text usually goes below image on mobile */
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+        /* ================ intro ========================== */
+.intro .cont{
+    height: 300px;
+    width: 500px;
+    border: solid 1px var(--secondary);
+    border-radius: 5%;
+    padding: 20px;
+    position: absolute;
+    top: 10px; left: 20px;
+    background-color: white;
+}
+   .intro{
+        position: relative;
+    }
+    .intro>img{
+ 
+        width: 100%;
+    }
+    .intro p{
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+        /* ================ work ========================== */
+
+.work{
+  height: auto;
+margin-bottom: 50px;
+}
+ .work h2{
+      color: var(--primary);
+      text-align: center;
+  
+    }
+
+
+  
+
+
+
+    .card {
+      width: 400px;
+      height: 350px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* Image always at 50% brightness */
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     
+    }
+
+    /* Title always visible */
+    .card h2 {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;    
+      color: white;
+      font-size: 1.8rem;
+      margin: 0;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+      z-index: 2;
+     transition: opacity 0.4s ease; /* Smooth fade in/out */
+}
+
+
+    /* Paragraph hidden below initially */
+    .card p {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 25%;
+      font-size:15px;
+      word-spacing: 1.5px;
+      letter-spacing: 1px;
+      padding:7px 20px;
+      text-align: justify;
+      color: white;
+      backdrop-filter: blur(1.5px) brightness(50%); 
+    }
+
+    /* Slide in on hover */
+    /* .card:hover p {
+      bottom: 0;
+    }
+     */
+   .work_container{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        max-width: 1400px;
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+   
+    }
+
+
+
+        /* ===================
+        
+        
+        ================================== */
+        
+
+       
+        .sm-icon{
+            height: 15px; width: 15px;
+        }
+
+/* ================== services ================= */
+        .s-main{
+            
+            height: 80vh;
+            width: 80%;
+            margin: 20px auto 80px;
+         
+        }
+        .s-main .s-details{
+        padding:  0 20px;
+        margin-top: 90px;
+        }
+       
+          .s-main .s-list li{
+            margin: 10px 0;
+          }
+        .s-sidebar{
+      
+            width: 15%;
+            height: 100%;
+        }
+           .s-sidebar div{
+            border: solid var(--primary-border) 1px;
+            width: 100%;
+            height: 23%;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--primary);
+            font-weight: 500;
+            gap: 20px;
+           }
+        .s-details{
+            width: 55%;
+            height: 100%;  
+    
+        }
+        .s-details .s-list{
+         padding:10px 10% ;
+            gap: 40px;
+        }
+        .s-details div{
+            text-align: justify;
+            line-height: 1.7;
+            letter-spacing: 1px;
+        }
+        .s-img{
+
+            width: 30%;
+            height: 100%;   
+        }
+        .s-img img{
+            width: 100%;
+            height: 50%;
+        }
+         .s-sidebar div:hover{
+             background-color: var(--primary);
+            color: var(--mordern);  
+         }
+        .s-sidebar button{
+            width: 100%;
+            height: 40px;
+            font-weight: 600;
+            background-color: var(--primary);
+            color: var(--mordern);
+            border: none;
+        }
+        .s-sidebar:hover button{
+            background-color: var(--mordern);
+            color: var(--primary);  
+        }
+ /* =================================== frequently asked questions ========================================= */
+
+.faq-section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.back-arrow {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px auto;
+    color:var(--primary);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.back-arrow:hover {
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+.faq-section h1 {
+    font-family: serif;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: var(--primary);
+}
+
+/* FAQ and Image Layout */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+}
+
+.faq-cont {
+    flex: 1;
+}
+
+.faq-item {
+    border: 1px solid var(--primary-border);
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.faq-item i {
+    color: var(--primary);
+    font-size: 12px;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Floating Elements */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}  
+
+
+        /* =================================== footer ========================================= */
+    footer{
+        width: 100%;
+        background-color: var(--primary);
+        color: white;
+        box-shadow: 0 6px 15px var(--primary);
+    }
+    footer:hover{
+        border-top: solid var(--primary-border) 3px;
+        color: var(--primary);
+        background-color: white;
+    }
+    .footer-cont{
+
+        display: flex;
+        justify-content:center;
+        padding: 40px;
+    }
+    .footer-cont div:not(.base){
+        width: 25%;
+        height: 150px;
+        /* border: solid red; */
+        display: flex;
+        flex-direction:column ;
+        justify-content: start;
+        align-items: center;
+    }
+        .footer-cont div li{
+            margin-bottom: 10px;
+        }
+    .base{
+        width: 100%;
+        height: 10vh;
+        padding: 15px 60px;
+        border-top: solid var(--secondary) 1px;
+         background-color: var(--primary);
+    }
+          footer:hover .base{
+        color: var(--primary);
+        background-color: white;
+        border-top: solid white 1px;
+    }
+      footer:hover input{
+        border: solid var(--primary) 1px;
+      }
+        /* ==============================blog page ================================ */
+    
+        .blog{
+            height: auto;
+            padding:0 5%;
+            width: 100%;
+            justify-content: center;
+        }
+        .blog main{
+            height: auto;
+            width: calc(100% - 30%);
+            padding: 0 20px;
+        }
+        .blog aside{
+            height: 100vh;
+            width: 30%;
+            align-self: flex-start;
+            position: sticky;
+            top: 0;
+            padding:10px;
+        }
+        .rec-post h2, .news-del h2{
+            color: var(--primary);
+            margin-top: 5px;
+            font-size: 20px;
+        }
+        .news-del P{
+            margin: 15px 0px;
+            line-height: 1.3;
+            font-size: 13px;
+        }
+        .news-del blockquote{
+            margin-top: 10px;
+            justify-content: center;
+            gap: 50%;
+            font-size: 12px;
+        }
+        
