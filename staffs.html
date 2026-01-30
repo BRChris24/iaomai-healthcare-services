@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <header class="d-flexx" id="header">
+    </header>
+
+        <style>
+
+          .stf-head{
+            text-align: center;
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+          }
+          .doctors-section .para{
+            text-align: center;
+            color: var(--primary);
+            font-size: 18px;
+            width: 90%;
+            margin: 0 auto 50px;
+            line-height: 1.6;
+          }
+   /* Doctor Card Slider */
+
+            .doctors-section {
+   
+      margin:14vh 50px 30px;
+    }
+
+    .doctors-container {
+      max-width: 1200px;   
+      margin: 0 auto;
+    }
+
+    /* ===== GRID ===== */
+    .doctors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    /* ===== CARD ===== */
+    .doctor-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+      text-align: center;
+      height: 500px;
+    }
+
+    .doctor-card img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+    }
+
+    .doctor-info {
+      background:var(--sec-col);
+      padding: 10px 20px;
+      height: 30%;
+    }
+
+    .doctor-info h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #1f2f6b;
+    }
+
+    .doctor-info p {
+      font-size: 13px;
+      letter-spacing: 3px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #1f2f6b;
+    }
+
+     .socials {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .socials i {
+      width: 34px;
+      height: 34px;
+      background: #1f2f6b;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .view-profile {
+      background: #1f2f6b;
+      color: #fff;
+      padding: 14px;
+      
+    }
+    .view-profile a {
+        color: var(--secondary);
+        text-decoration: none;
+        font-size: 20px;
+        padding: 16px;
+    }
+
+        /* Testimonial */
+        .testimonial {  
+            background: linear-gradient(rgba(31, 43, 108, 0.85), rgba(31, 43, 108, 0.85)), url(./assets/images2/Article-1.png)  no-repeat center/cover  ;
+              color: white;         
+            padding: 100px 15%; 
+            text-align: center; 
+            
+        }
+        .testimonial p { 
+            font-size: 1.2rem; 
+            line-height: 1.8;
+            margin-bottom: 30px; 
+            color: var(--white);
+            }
+      </style>
+
+
+
+       
+     <section class="doctors-section">
+     
+      <h1 class="stf-head">Our Team</h1>
+        <p class="para" style="">
+            At Iaomai healthcare, our strength lies in our dedicated team of professionals and medics who bring 
+            a wealth of expertise, innovation, and passion to every project. 
+        </p>
+
+  <div class="doctors-container">
+    <div class="doctors-grid">
+
+      <!-- CARD 1 -->
+      <div class="doctor-card">
+        <img src="./assets/images/nanny.jpg" />
+        <div class="doctor-info">
+          <h3>Mira</h3>
+          <p>NEUROLOGY</p>
+          <div class="socials">
+            <i class="bi bi-instagram"></i>
+           <i class="bi bi-facebook"></i>
+           <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+        
+      </div>
+
+         <div class="doctor-card">
+        <img src="./assets/images/nanny.jpg" />
+        <div class="doctor-info">
+          <h3>Mira</h3>
+          <p>NEUROLOGY</p>
+          <div class="socials">
+            <i class="bi bi-instagram"></i>
+           <i class="bi bi-facebook"></i>
+           <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+        
+      </div>
+<!-- ========================== -->
+         <div class="doctor-card">
+        <img src="./assets/images/nanny.jpg" />
+        <div class="doctor-info">
+          <h3>Mira</h3>
+          <p>NEUROLOGY</p>
+          <div class="socials">
+            <i class="bi bi-instagram"></i>
+           <i class="bi bi-facebook"></i>
+           <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+        
+      </div>
+
+<!-- ========================== -->
+         <div class="doctor-card">
+        <img src="./assets/images/nanny.jpg" />
+        <div class="doctor-info">
+          <h3>Mira</h3>
+          <p>NEUROLOGY</p>
+          <div class="socials">
+            <i class="bi bi-instagram"></i>
+           <i class="bi bi-facebook"></i>
+           <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+        
+      </div>
+<!-- ========================== -->
+         <div class="doctor-card">
+        <img src="./assets/images/nanny.jpg" />
+        <div class="doctor-info">
+          <h3>Mira</h3>
+          <p>NEUROLOGY</p>
+          <div class="socials">
+            <i class="bi bi-instagram"></i>
+           <i class="bi bi-facebook"></i>
+           <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+        
+      </div>
+
+<!-- ========================== -->
+         <div class="doctor-card">
+        <img src="./assets/images/nanny.jpg" />
+        <div class="doctor-info">
+          <h3>Mira</h3>
+          <p>NEUROLOGY</p>
+          <div class="socials">
+            <i class="bi bi-instagram"></i>
+           <i class="bi bi-facebook"></i>
+           <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</section> 
+
+    <section class="testimonial">
+        <i class="fas fa-quote-right" style="font-size: 50px; margin-bottom: 20px;"></i>
+        <p>“For he who has health has hope; and he who has hope, has everything.”
+</p>
+        <hr style="width: 50px; margin: 20px auto; border: 1px solid white;">
+        <h4>— Owen Arthur</h4>
+    </section>
+
+
+      <section class="contact-dis sec">
+    <br>
+    <h3 class="title SUB-text">GET IN TOUCH</h3>
+    <h2 class="main-title H-txt">CONTACT</h2>
+<br>
+    <div class="contact-dis-cont d-flexx">
+        <div>
+             <i class="bi bi-telephone icons-bs"></i>
+            <h3>CONTACT</h3>
+            <P>0708090900909  <br> 08989887877887878 </P>
+        </div>
+           <div>
+        
+             <i class="bi bi-instagram icons-bs"></i>
+            <h3>INSTAGRAM</h3>
+            <P>IAOMAI HEALTHCARE SERVICES </P>
+        </div>
+
+            <div>
+        
+             <i class="bi bi-facebook icons-bs"></i>
+            <h3>FACEBOOK</h3>
+            <P>IAOMAI HEALTHCARE SERVICES</P>
+        </div>
+
+            <div>
+        
+
+            <i class="bi bi-envelope-at icons-bs"></i>
+            <h3>EMAIL</h3>
+            <P>ioami@gmail.com </P>
+        </div>
+    </div>
+</section>
+
+<footer id="footer"></footer>
+
+<script src="./header.js"></script>
+<script src="./footer.js"></script>
+</body>
+</html>

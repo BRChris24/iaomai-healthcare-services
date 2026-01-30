@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    
+
+     <style>
+
+         
+body{
+        background-color: transparent !important; 
+    font-family: 'Poppins', sans-serif;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: scroll;
+  min-height: 320px;
+
+  gap: 60px;
+
+
+  text-align: center;
+}
+
+/* Content sits above both overlays */
+body > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Background color overlay */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color:rgba(173, 216, 230, 0.24);
+  z-index: 1;
+}
+
+/* Background image with brightness and blur */
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(./assets/images2/abt.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: brightness(0.5) blur(2px); /* slightly dimmed and softened */
+  transform: translateZ(0);
+  z-index: 0;
+  pointer-events: none;
+  will-change: filter;
+}
+
+    .about{
+      
+        height: 100vh;
+        overflow: scroll;
+    }
+    .about-hero{
+        flex-direction: column;
+        gap: 20px;
+        padding: 100px 0;
+        width: 90%;
+        margin: 0 auto;
+        height: 80vh;
+   
+        color:white;
+    }
+    
+.about-hero h1{
+    font-weight: 900;
+    font-size: 50px;
+
+}
+ .para{
+        margin: 30px auto;
+        text-align: justify;
+        font-size: 20px;
+
+      width: 70%;
+        }
+  
+     .about_details{
+    background-color: white;
+    height: auto;width: 90%;
+
+    border-radius:10px ;
+    margin: 20px auto;
+    
+} 
+.mission_para{
+  text-align: justify;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 70%;
+}
+.abt_det_cont{
+  margin: 50px auto;
+  width: 90%;
+  height: auto;
+
+}
+.abt_head{
+    font-size: 36px;
+    font-weight: 700;
+    color:var(--primary);
+  margin: 30px 0;
+}
+
+    
+        .abt{
+            width: 100%;
+            height:60vh;
+            background-color:var(--sec-col);
+            margin: 50px auto;
+           position: relative;
+        }
+        .abt img{
+        margin-left: 50px;
+            width: 25%;
+            height:300px;
+          
+         
+        }
+        .abt_detail{
+         
+            width: 70%;
+            height:300px;
+             color:var(--primary);
+            text-align: start;
+            padding:0 30px;
+     
+        }
+  
+
+        .staffs{
+            width: 90%;
+            height: auto;
+            margin: 70px auto;
+            text-align: center;
+    
+        }   
+        .staffs h1{
+            position: relative;
+                font-size: 36px;
+                font-weight: 700;
+                margin: 50px;
+            }
+
+  .staffs h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px; /* space between text and line */
+  width: 200px;
+  height: 4px; /* thickness of the line */
+  background-color: #1B3C53; /* customize color */
+  border-radius: 2px; /* smooth edges */
+  transform: translateX(-50%); /* centers it horizontally */
+}
+.staffs p{
+    font-size: 20px;  
+    line-height: 1.6;
+}
+.staff_cont{
+    display: flex;
+    min-width: 1000px;
+    flex-wrap: wrap;
+    gap:3%;
+    margin: 60px auto;
+    /* border: solid 2px red; */
+}
+.stf{
+    /* border: solid 2px green; */
+    width: 31.25%;
+    height: auto;
+ /* margin-bottom: 30px; */
+
+}
+.stf img:hover {
+  filter: grayscale(100%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.stf img{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+   transition: all 1s ease; /* smooth transition */
+
+}
+.stf:hover h3{
+    color:red;
+    transition: all 1s ease;
+}
+
+.stf h3{
+
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #1B3C53;
+}
+
+.stf p{
+    font-size: 18px;
+    color: #555;
+}
+.abt_mobile{
+  display: none;
+}
+
+    .staffs_cont{
+     width: 80%;
+     margin: 10vh auto 0;
+    }
+        .deon{
+            width: 100%;
+            height:90vh;
+            background-color:var(--sec-col);
+            margin: 50px auto;
+           position: relative;
+         
+           overflow: hidden;
+        }
+        .deon img{
+          position: absolute;
+          bottom: 0;
+          left: -10%;
+            width: auto;
+            height: 90%;
+         
+        }
+        .don_detail{
+            position: absolute; 
+            bottom: 20px;
+            right: 0;
+            width: 67%;
+            height: 400px;
+             color:var(--primary);
+            text-align: start;
+            border: solid 2px red;
+        }
+  
+
+        .staffs{
+            width: 90%;
+            height: auto;
+            margin: 70px auto;
+            text-align: center;
+        }   
+        .staffs h1{
+            position: relative;
+                font-size: 36px;
+                font-weight: 700;
+                margin: 50px;
+            }
+
+  .staffs h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px; /* space between text and line */
+  width: 200px;
+  height: 4px; /* thickness of the line */
+  background-color: #1B3C53; /* customize color */
+  border-radius: 2px; /* smooth edges */
+  transform: translateX(-50%); /* centers it horizontally */
+}
+.staffs p{
+    font-display: 20px;  
+    line-height: 1.6;
+}
+.staff_cont{
+    display: flex;
+    min-width: 1000px;
+    width: 32%;
+    flex-wrap: wrap;
+    gap:3%;
+    margin: 50px auto 0px;
+
+}
+.stf{
+    /* border: solid 2px green; */
+    width: 31.25%;
+    height: auto;
+ margin-bottom: 30px;
+
+}
+.stf img:hover {
+  filter: grayscale(100%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.stf img{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+   transition: all 1s ease; /* smooth transition */
+
+}
+.stf:hover h3{
+    color:red;
+    transition: all 1s ease;
+}
+
+.stf h3{
+
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #1B3C53;
+}
+
+.stf p{
+    font-size: 18px;
+    color: #555;
+}
+.abt_mobile{
+  display: none;
+}
+.abt_head{
+     color: var(--primary);
+     text-align: center;
+     margin: 80px 0 0px ;
+}
+
+
+        .story{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            height: auto;
+            margin: 50px auto;
+            gap: 50px;
+            padding: 50px 0;
+            
+
+        }
+        .story > div{
+            width: 47%;
+            height: 400px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: solid 1px #ccc;
+        }
+        .story img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .story h2{
+            font-size: 32px;
+            font-weight: 700;
+            color: #1B3C53;
+            margin-bottom: 40px;
+        }
+        .story p{
+            padding:20px;
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+        .story_cont4 li{
+            margin-bottom: 20px;
+        }
+   
+
+        .core-values{
+            margin: 50px auto;
+            width: 90%;
+            gap: 45px;
+            text-align: left;
+        }
+        .core-values div{
+            width: 47%;
+            border: solid 1px #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            height: 450px;
+        }
+        .core-values li{
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        </style>
+
+<main class="about">
+<header id="header" class="d-flexx"></header>
+    <section class="about-hero d_flex_center">
+        <br><br><br>
+    <h1>About Ioamai Healthcare Services</h1>
+    <p class="para">
+        IAOMAI Healthcare Services is committed to delivering professional
+         home nursing and personalized care that brings comfort, safety,
+         and quality healthcare directly to your doorstep across Nigeria.
+    </p>
+    </section>
+<!-- =================================================== -->
+    <section class="about_details">
+      <div class="abt_det_cont">
+    <br><br>
+          <h1 class="abt_head">OUR MISSION</h1>
+          <br>
+          <p class="mission_para">
+            Our mission is to provide safe, high-quality, and compassionate home healthcare services that promote comfort, dignity, and holistic well-being.
+          </p> 
+
+             <h1 class="abt_head">OUR VISION</h1>
+          <br>
+          <p class="mission_para">
+           To become a trusted leader in home-based healthcare, transforming how individuals and families experience care by making professional, compassionate healthcare accessible in every home.
+          </p> 
+      </div>
+     
+
+
+     <!-- =========================================================== -->
+      
+      <div class="abt d-flexx">
+        <img src="./assets/images2/i-nanny.png" alt="about ceo"> 
+        <div class="abt_detail">
+          <h1 style="margin-bottom: 20px;">Mirabel Ugwoke</h1>
+           <h2 style="margin-bottom: 10px;">Founder & Chief Executive Officer</h2>
+           <hr>
+           <p style="margin-top: 20px; ">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Explicabo repellat eius vero veritatis fugit officia repudiandae excepturi
+              animi molestias fuga debitis distinctio minima,
+             aliquam quae eveniet est maxime earum! Dignissimos!
+           </p>
+         
+        </div>
+      
+      </div>
+      <!-- =================== staffs ========================== -->
+
+      <div>
+         <h1 class="abt_head">Our Team</h1>
+        <p class="para" >
+           At IAOMAI Healthcare Services,
+            our strength lies in our dedicated team of healthcare professionals who bring expertise,
+             compassion, and commitment to every patient and every aspect of care.
+        </p>
+
+   
+
+        <div class="staff_cont">
+            <div class="stf">
+                <img src="./assets/images2/i-recovery.png" alt="">
+                <h3>Mirabel Ugwoke</h3>
+                <p>Nurse</p>
+            </div>
+
+            <div class="stf">
+                <img src="./assets/images2/i-recovery.png" alt="">
+                <h3>Mirabel Ugwoke</h3>
+                <p>Nurse</p>
+            </div>
+
+          <div class="stf">
+                <img src="./assets/images2/i-recovery.png" alt="">
+                <h3>Mirabel Ugwoke</h3>
+                <p>Nurse</p>
+            </div>
+          <div class="stf">
+                <img src="./assets/images2/i-recovery.png" alt="">
+                <h3>Mirabel Ugwoke</h3>
+                <p>Nurse</p>
+            </div>
+     
+            <div class="stf">
+                <img src="./assets/images2/i-recovery.png" alt="">
+                <h3>Mirabel Ugwoke</h3>
+                <p>Nurse</p>
+            </div>
+          
+            <div class="stf">
+                <img src="./assets/images2/i-recovery.png" alt="">
+                <h3>Mirabel Ugwoke</h3>
+                <p>Nurse</p>
+            </div>
+
+          <div class="stf">
+                <img src="./assets/images2/i-recovery.png" alt="">
+                <h3>Mirabel Ugwoke</h3>
+                <p>Nurse</p>
+            </div>
+
+
+        </div>
+
+<!-- =========================================================mobile carousel========================= -->
+     
+        <!-- ======================================staffs end ========================= -->
+      </div>
+
+
+        <!-- ======================================staffs end ========================= -->
+      </div>
+
+      <!-- ====================story================= -->
+      <div class="story">
+  
+        <div class="story_cont1">
+            <h2 class="abt_head">Our Story </h2>
+         
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore voluptates hic nam dolore perspiciatis doloribus aut officia iure illo, quas alias consequatur cum vel libero ipsum! Quibusdam voluptatum aliquam praesentium?
+            </p>
+        </div>
+
+
+        <div class="story_cont2">
+          <Img src="./assets/images2/i-physio.png" alt=""> 
+        </div>
+
+        <div class="story_cont3">
+          <Img src="./assets/images2/i-physio.png" alt=""> 
+        </div>
+
+        <div class="story_cont4">
+            <h2>Why Choose Us</h2>
+            <p>
+                Over the years, we have expanded our services to include cadastral surveys, 
+                engineering surveys, topographical mapping, GIS solutions, drone surveying, 
+                and land consultancy. At Deon Landmark Surveys, we don’t just measure land —
+                we measure progress.We believe that every project deserves accuracy, and every 
+                client deserves clarity. Whether we’re mapping new communities, defining property
+                limits, or providing geospatial insights, we do it with a vision that looks beyond
+                boundaries.
+            </p>
+        </div>
+ 
+    </div>
+
+    <!-- =========================== -->
+     <div>
+        
+      
+
+            <h2 style="color: var(--primary);"> OUR CORE VALUES</h2>
+        <div class="core-values d-flexx">
+          
+            <div>
+
+    
+        
+          <ul>
+            <li>
+                <strong>Compassion</strong>
+                <p>We care deeply about the people we serve. Every interaction is guided by empathy, kindness, and respect for the individual behind the condition.</p>
+            </li>
+ 
+            <li>
+                <strong>Professional Excellence</strong>
+                <p>We uphold the highest standards of clinical practice. Our services are delivered by trained, qualified, and licensed professionals committed to continuous improvement.</p>
+            </li>
+            <li>
+                <strong>Dignity & Respect</strong>
+                <p>We honour the dignity of every client, recognising their autonomy, privacy, culture, and personal values within their own homes.</p>
+            </li>
+                    </div>
+
+                    <div>
+
+            
+            <li>
+                <strong>Trust & Integrity</strong>
+                <p>We understand that inviting healthcare providers into one’s home requires trust. We act with honesty, accountability, and transparency at all times.</p>
+            </li>
+            <li>
+                <strong>Person-Centred Care</strong>
+                <p>We tailor our services to meet the unique needs of each client and family, ensuring care is personalised, flexible, and responsive.</p>
+            </li>
+            <li>
+                <strong>Collaboration</strong>
+                <p>We work closely with families, caregivers, and healthcare partners to ensure continuity of care and the best possible outcomes.</p>
+            </li>
+
+          </ul>
+        </div>
+
+        </div>
+
+     </div>
+     <br><br>
+   </section>
+
+ <footer id="footer"></footer>
+   <script src="./header.js"></script>
+   <script src="./footer.js"></script>
+</body>
+</html>

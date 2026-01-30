@@ -15,14 +15,14 @@
         }
         @font-face {
             font-family:"winter" ;
-            src: url(./assets/fonts/Winter\ Tosca.otf);
+            src: url(./assets/fonts/RushDriver-Italic.otf);
         }
         :root{
             --main-color: #000;
             --primary:#161E54;
             
             --secondary:#159EEC;
-            --sec-col:#bdc7d4;
+            --sec-col:lightblue;
         }
         header{
             width: 100%;          
@@ -38,7 +38,7 @@
         .H-txt{
             font-size: 30px;
             line-height: 1.2;
-            letter-spacing: 5px;
+            /* letter-spacing: 5px; */
           font-family: 'Poppins', sans-serif;
             color: var(--primary);
         }
@@ -51,38 +51,38 @@
             text-align: justify;
     font-family: 'Poppins', sans-serif;
 }
-        .sec{
+
+.sec{
     background-color:white;
 }
-   .sec-colo{
+.sec-colo{
                   color: white;
            background-color:var(--sec-col);
            border-radius: 20px;
            margin:0 4%;
-        }
-        .d-flexx{
+}
+.d-flexx{
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-        }
-        .flxx-col{
+    }
+.flxx-col{
         flex-direction: column;
-        }
-        header a{
+    }
+header a{
             color:var(--primary);
             font-weight:semibold;
             font-size: 19px;
             font-weight: 400;
             line-height: 32px;
-        }
-        header ul{
+}
+header ul{
             gap: 30px;
-        }
-          .icons-l{
+}
+.icons-l{
             height: 50px;
-        }
-         .normal, .sq-btn{
+}
+.normal, .sq-btn{
             border-radius: 7px;
             border: none;
             background-color: var(--primary);
@@ -93,20 +93,51 @@
             cursor: pointer;
                 padding: 10px;
                 transition: all 1s ease;
-        }
-        .normal:hover, .sq-btn:hover{
+}
+.normal:hover, .sq-btn:hover{
            border: solid var(--primary) 1px;
            background-color: white;
             color: var(--primary); 
-        }
-        .sq-btn{
+}
+.sq-btn{
             border-radius: 0;
              width: auto;
             height: auto;
             padding: 10px;
+}
+
+        /* ===============landing sec====== */
+                .main-h{
+            height: 100vh;
+            width: 100%;
+   
+
         }
 
+        .main-h img{
+            height: 100%;
+            width: 100%;
+        }
+        .main-h h1{
+            font-family: "winter";
+            font-size: 60px;
+            word-spacing: 20px;
+            letter-spacing: 6px;
+            color: var(--primary);
+        }
+        .main-h p{
+            font-size: 25px;
+            font-weight: 600;
+            color:var(--mordern);
         
+        }
+        .main-h div{
+            position: absolute; 
+            bottom: 30px;
+            padding: 30px;
+            margin: 0;
+            
+        }
         /* ===================== hero section ===================== */
         .hero-sec{
             width: 100%;
@@ -246,14 +277,6 @@ z-index: 3;
     display: block;
 }
 
-/* Responsive for Mobile */
-@media (max-width: 768px) {
-    .row, .row.reverse {
-        flex-direction: column-reverse; /* Text usually goes below image on mobile */
-        text-align: center;
-        gap: 30px;
-    }
-}
 
         /* ================ intro ========================== */
 .intro .cont{
@@ -291,20 +314,31 @@ height: auto;
   
     }
 .work p{
-    color: white;
+    color:white;
 }
 
-  
+     .work_container{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        max-width: 1400px;
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
 
 
 
     .card {
-      width: 370px;
-      height: 350px;
+      width: 350px;
+      height: 400px;
       position: relative;
       overflow: hidden;
       border-radius: 10px;
       cursor: pointer;
+       gap: 5%;
     }
 
     /* Image always at 50% brightness */
@@ -318,7 +352,7 @@ height: auto;
     /* Title always visible */
     .card h2 {
       position: absolute;
-   top: 20px;
+      top: 20px;
       width: 100%;
       text-align: center;    
       color: white;
@@ -344,18 +378,7 @@ height: auto;
       backdrop-filter: blur(1.5px) brightness(50%); 
     }
 
-   .work_container{
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        max-width: 1400px;
-        display: flex;
-        flex-wrap:wrap ;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-   
-    }
+
 
 
 
@@ -440,6 +463,61 @@ height: auto;
             background-color: var(--mordern);
             color: var(--primary);  
         }
+
+        /* ================================= news section ========================================= */ */
+      .newsec{
+        padding: 50px 0;
+     height: auto;
+    }
+    .news-cont{
+        height:500px;
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 5px;
+   
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+
+    }
+    .news-cont>div{
+      
+        background-color: white;
+        border-radius: 10px;
+        width: 48%;
+        height: 45%;
+    }
+    .news-cont img{
+        height: 100%;
+        width: 40%;
+    }
+    .news-details{
+
+        width: 59%;
+        height: 100%;
+        padding: 10px;
+        flex-direction: column;
+        align-items:start;
+        justify-content: center;
+        gap: 20px;
+    }
+    .news-details h4{
+        color: var(--secondary);
+        font-size: 12px;
+    }
+    .news-details p{
+        color: var(--primary);
+        /* font-size: 14px; */
+        font-weight: 600;
+      }
+    .news-details:hover button{
+        background-color: var(--primary);
+        color: var(--secondary);
+    }
+
+
+
  /* =================================== frequently asked questions ========================================= */
 
 .faq-section {
@@ -468,12 +546,13 @@ height: auto;
 
 
 /* FAQ and Image Layout */
-.content-wrapper {
+.accord-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
+    gap: 50px;
     text-align: left;
+    border: 1px solid var(--primary-border);
 }
 
 .faq-cont {
@@ -498,46 +577,117 @@ height: auto;
     font-size: 12px;
 }
 
-.image-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
 
-.hero-image {
+
+.accord-image {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* Floating Elements */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #25D366;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
+  .accordion {
+    max-width: 600px;
+    width: 50%;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    gap: 40px;
+  }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 16px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .accordion-header::after {
+    content: "+";
+    position: absolute;
+    right: 16px;
+    font-size: 18px;
+    transition: transform 0.3s;
+  }
+
+  .accordion-header.active::after {
+    content: "−";
+  }
+
+  .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 16px;
+    transition: max-height 0.3s ease;
+    background-color: var(--primary);
+  }
+
+  .accordion-body p {
+    margin: 16px 0;
+  }
+
+  .accordion-body.open {
+    padding: 16px;
+  }
+
+
+/* ==========================contact=== */
+
+    .contact-dis{
+        height: 70vh;
+        padding-top: 40px;
     }
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
+    .contact-dis-cont{
+
+        height: 55%;
+        width: 80%;
+        margin: 0 auto;
+
     }
-}  
+    .contact-dis-cont div{
+        width: 23%;
+        height: 200px;
+        background: var(--sec-col);
+        padding: 20px;
+        border-radius: 15px;
+        transition: all 1.5s;
+    }
+     .contact-dis-cont div:hover{
+        background-color: var(--primary);
+        color: white;
+     }
+      .contact-dis-cont div:hover h3,  .contact-dis-cont div:hover p,  .contact-dis-cont div:hover i{
+        color: white;
+      }
+    .contact-dis-cont h3{
+        color: var(--primary);
+        margin: 10px 0 20PX;
+    }
+     .contact-dis-cont p{
+       margin-top: 10px;
+        color: var(--primary);
+    }
+    .contact-dis-cont div:hover i{
+               color: var(--primary);
+
+    }
+    .icons-bs{
+        font-size: 32px;
+        color: var(--primary);
+                transition: all 1.5s;
+    }
+    .contact-dis-cont div:hover .icons-bs{
+        background-color: var(--primary);
+        color: white;
+     }
+
 
 
         /* =================================== footer ========================================= */
@@ -584,11 +734,27 @@ height: auto;
         background-color:var(--sec-col);
         border-top: solid white 1px;
     }
+    footer input{
+        font-size: 16px;
+        padding: 20px;
+        width: 250px;
+        border: none;
+        outline: none;
+    }
       footer:hover input{
         border: solid var(--primary) 1px;
       }
 
 
+    .news-inp ,.news-inp::placeholder{
+        font-weight: 500;
+        color:var(--primary);
+    }
+    .base img{
+        margin-right: 20px;
+    }
+     /* ================================================================= */
+      /* ================================================================= */
 
       /* ================================================================= */
         /* ==============================blog page ================================ */
@@ -603,6 +769,7 @@ height: auto;
             height: auto;
             width: calc(100% - 30%);
             padding: 0 20px;
+      
         }
         .blog aside{
             height: 100vh;
@@ -612,6 +779,17 @@ height: auto;
             top: 0;
             padding:10px;
         }
+        .blog-cont{
+            height: auto;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            background-color: white;
+        }
+        .blog-cont img{
+           margin: 0 auto;
+        }
         .rec-post h2, .news-del h2{
             color: var(--primary);
             margin-top: 5px;
@@ -620,7 +798,7 @@ height: auto;
         .news-del P{
             margin: 15px 0px;
             line-height: 1.3;
-            font-size: 13px;
+            font-size: 15px;
         }
         .news-del blockquote{
             margin-top: 10px;
@@ -629,9 +807,8 @@ height: auto;
             font-size: 12px;
         }
         
-        /* ==============================  */
-    
-               /* <!-- ========================================================== --> */
+ 
+               /* <!-- =================== aside for blog ======================================= --> */
                aside label{
                 background-color: var(--primary);
                 padding: 10px;
@@ -713,30 +890,3 @@ height: auto;
 
 
 
-        .news-cont{
-            height: 100%;
-            flex-direction: column;
-            justify-content: center;
-            gap: 5%;
-            background-color:white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 15px;
-        }
-        .news-cont > .img{
-        justify-content: center;
-        height: 55%;
-        width: 80%;
-        overflow: hidden;
-        }
-        .news-cont > .img > img{
-            height: 100%;
-             width: auto;
- 
-        }
-        .news-cont .news-del{
-            height: 35%;
-        }
-        .news-del h2{
-            margin-top: 30px;
-        }

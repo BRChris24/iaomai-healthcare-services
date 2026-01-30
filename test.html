@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medzoon - Medical Health Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        :root {
+    --primary-blue: #007bff;
+    --dark-blue: #003366;
+    --light-bg: #c9d5e3;
+    --text-gray: #666;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: var(--light-bg);
+}
+
+/* Header */
+header {
+    background: white;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--dark-blue);
+}
+
+.btn-appointment {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-nav {
+    background: var(--primary-blue);
+    padding: 10px 10%;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #0044cc, #002266);
+    height: 600px;
+    position: relative;
+    padding: 50px 10%;
+    color: white;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.hero h1 span {
+    color: var(--primary-blue);
+}
+
+.hero-cards {
+    display: flex;
+    position: absolute;
+    bottom: -50px;
+    width: 80%;
+}
+
+.card {
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+    color: white;
+}
+
+.card.blue { background: #0066ff; }
+.card.light-blue { background: #3399ff; }
+
+/* Service Grid */
+.services {
+    padding: 150px 10% 80px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.service-item i {
+    font-size: 40px;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+    </style>
+
+    <header>
+        <nav class="top-nav">
+            <div class="logo">Medzoon</div>
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +880-548-7262</span>
+                <span><i class="fas fa-envelope"></i> eye@example.com</span>
+                <button class="btn-appointment">BOOK APPOINTMENT</button>
+            </div>
+        </nav>
+        <div class="main-nav">
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">HEALTH & MEDICAL</span>
+            <h1>Best Caring, <br><span>Better Doctors</span></h1>
+            <p>Reliable healthcare services provided by world-class professionals to ensure your family's well-being.</p>
+            <div class="hero-btns">
+                <button class="btn-primary">LEARN MORE</button>
+                <button class="btn-outline"><i class="fas fa-play"></i> (433)-678-1133</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="doctor-placeholder.png" alt="Doctor">
+        </div>
+        
+        <div class="hero-cards">
+            <div class="card blue">
+                <i class="fas fa-user-md"></i>
+                <h3>24/7 Emergency Services</h3>
+                <p>Quick response for critical medical needs.</p>
+            </div>
+            <div class="card light-blue">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Skilled Medical Professionals</h3>
+                <p>Expert care from certified doctors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="section-header">
+            <div>
+                <span class="sub-title">OUR DEPARTMENT</span>
+                <h2>Extra Ordinary <br>Health Solutions</h2>
+            </div>
+            <button class="btn-primary">MORE DEPARTMENT</button>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-item">
+                <div class="icon">01</div>
+                <i class="fas fa-pills"></i>
+                <h4>Orthopedic Care</h4>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <div class="service-item">
+                <div class="icon">02</div>
+                <i class="fas fa-tooth"></i>
+                <h4>Dentistry Department</h4>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <div class="service-item">
+                <div class="icon">03</div>
+                <i class="fas fa-brain"></i>
+                <h4>Neurology Department</h4>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <div class="service-item">
+                <div class="icon">04</div>
+                <i class="fas fa-heartbeat"></i>
+                <h4>Cardiology Sector</h4>
+                <a href="#">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
