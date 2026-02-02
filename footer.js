@@ -23,8 +23,9 @@ const footer = `
         <h3>Contact Us</h3>
         <br>
         <ul>
-            <li>Call: (234) 70666 6666 66</li>
+            <li>Call:09169339161</li>
             <li>Email: ioami@gmail.com</li>
+            <li>whatsapp : 08143935894</li>
             <li>Address: no.1 ioami st enugu</li>
             <li>Nigeria</li>
         </ul>

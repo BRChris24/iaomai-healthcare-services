@@ -647,15 +647,15 @@ height: auto;
     .contact-dis-cont{
 
         height: 55%;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
 
     }
     .contact-dis-cont div{
-        width: 23%;
-        height: 200px;
+        width: 18%;
+        height: 170px;
         background: var(--sec-col);
-        padding: 20px;
+        padding: 15px;
         border-radius: 15px;
         transition: all 1.5s;
     }
@@ -669,10 +669,12 @@ height: auto;
     .contact-dis-cont h3{
         color: var(--primary);
         margin: 10px 0 20PX;
+           font-size: 15px;
     }
      .contact-dis-cont p{
        margin-top: 10px;
         color: var(--primary);
+        font-size: 15px;
     }
     .contact-dis-cont div:hover i{
                color: var(--primary);
