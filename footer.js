@@ -26,8 +26,7 @@ const footer = `
             <li>Call:09169339161</li>
             <li>Email: ioami@gmail.com</li>
             <li>whatsapp : 08143935894</li>
-            <li>Address: no.1 ioami st enugu</li>
-            <li>Nigeria</li>
+           
         </ul>
     </div>
     <div>
@@ -37,6 +36,8 @@ const footer = `
         <input type="text" placeholder="Enter your Email address ..." class="news-inp" name="news"> 
         <img src="./assets/icons/Vector (7).png" alt="">
         </label>
+         <p>Address: no.1 ioami st enugu</p>
+            <p>Nigeria</p>
     </div>
 
 
