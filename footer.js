@@ -36,8 +36,8 @@ const footer = `
         <input type="text" placeholder="Enter your Email address ..." class="news-inp" name="news"> 
         <img src="./assets/icons/Vector (7).png" alt="">
         </label>
-         <p>Address: no.1 ioami st enugu</p>
-            <p>Nigeria</p>
+         <p>14, Colliery Avenue (valid house),ENUGU STATE, NIGERIA</p>
+         
     </div>
 
 

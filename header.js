@@ -1,3 +1,6 @@
+// C:\Users\USER\Documents\chris FOLDER\healthcare\header.js
+
+
 const data = `
   <img src="./assets/icons/iaomai_logo_-rvm.png" class="icons-l" alt="">
 
@@ -19,21 +22,33 @@ const data = `
 
   <a href=""><button class="normal">Get started</button></a>
 `;
+
 document.getElementById("header").innerHTML = data;
 
+/* ==========================
+   HAMBURGER MENU LOGIC
+========================== */
 
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
 
-// Select all nav links
-const navLinks = document.querySelectorAll("nav ul li a");
+/* ==========================
+   ACTIVE + FOCUS CURRENT LINK
+========================== */
 
-// Get current page filename (e.g., "about.html")
-const currentPage = window.location.pathname.split("/").pop();
+const navLinks = document.querySelectorAll("#nav-menu a");
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-// Loop through each link
 navLinks.forEach(link => {
-  // Compare href value with current page
-  if (link.getAttribute("href") === currentPage) {
+  const linkPage = link.getAttribute("href");
+
+  if (linkPage === currentPage) {
     link.classList.add("active");
+    link.setAttribute("tabindex", "0");
+    link.focus();
   }
 });
