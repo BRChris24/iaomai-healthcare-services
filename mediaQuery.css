@@ -206,11 +206,13 @@ bottom: 110px;
     margin-bottom: 20px;
 }
 .contact-dis {
-    height: 90vh;
-    padding-top: 40px;
+    height:auto;
+    padding: 40px 0 150px;
+
 }
 .contact-dis-cont {
-    height: 55%;
+    height: 700px;
+    /* margin: 30px 0; */
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;

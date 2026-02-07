@@ -6,10 +6,10 @@ const contact = `
 
 <div class="contact-dis-cont d-flexx">
 
-   <a href="tel:08143935894">
+   <a href="tel:08169339161">
     <i class="bi bi-telephone icons-bs"></i>
     <h3>MOBILE</h3>
-    <p>08143935894</p>
+    <p>08169339161</p>
   </a>
 
   <a href="https://www.instagram.com/iaomai_healthcare_services"
